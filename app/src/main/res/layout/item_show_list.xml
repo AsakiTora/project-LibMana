@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/tienxu"
+        android:layout_centerInParent="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tvLoaiChi"
+        style="@style/tvThuChi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/imgIcon"
+        android:layout_centerInParent="true"
+        android:text="Ăn uống" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ivDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:src="@drawable/ic_delete"
+        android:layout_marginEnd="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ivEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ivDel"
+        android:layout_toStartOf="@+id/ivDel"
+        android:layout_centerInParent="true"
+        android:layout_alignBottom="@+id/ivDel"
+        android:background="@color/white"
+        android:src="@drawable/ic_setup"
+        android:layout_marginEnd="10dp"/>
+
+</RelativeLayout>

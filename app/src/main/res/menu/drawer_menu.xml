@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <!--    chỉ có thể chọn 1 mục trong menu    -->
+    <!--    được chọn và mở 1 phân đoạn     -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_color"
+            android:icon="@drawable/ic_color"
+            android:title="Thay đổi màu sắc" />
+        <item
+            android:id="@+id/nav_brightness"
+            android:icon="@drawable/ic_brightness"
+            android:title="Sắc sáng tối" />
+    </group>
+
+    <!--    phương thức giao tiếp chỉ kích hoạt hành động mà không được chọn    -->
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_backup"
+                android:icon="@drawable/ic_backup"
+                android:title="Sao lưu" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Chia sẻ" />
+            <item
+                android:id="@+id/nav_update"
+                android:icon="@drawable/ic_update"
+                android:title="Kiểm tra cập nhật" />
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings"
+                android:title="Cài đặt" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/botron_layout"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/tv_content_add"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/botron_textview"
+        android:text="Thêm phân loại"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/abril"/>
+
+    <ImageView
+        android:id="@+id/img_add"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/tv_content_add"
+        android:src="@drawable/img"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/add_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_layout"
+        android:layout_toEndOf="@id/img_add"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@id/img_add">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_camera"
+            android:id="@+id/img_camera" />
+
+        <TextView
+            android:id="@+id/tv_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chụp ảnh"
+            android:layout_toEndOf="@id/img_camera"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/upload_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_layout"
+        android:layout_toEndOf="@id/add_img"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@id/img_add">
+        <ImageView
+            android:id="@+id/img_upload_file"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_memory" />
+
+        <TextView
+            android:id="@+id/tv_upload_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tải ảnh lên"
+            android:layout_toEndOf="@id/img_upload_file"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_add"
+        android:layout_below="@id/tv_content_add"
+        app:hintEnabled="true"
+        android:padding="16dp"
+        app:counterMaxLength="15">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:hint="Nhập tên loại"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_add"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:layout_weight="1"
+            android:id="@+id/btnCal"
+            android:text="Hủy"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:layout_weight="1"
+            android:id="@+id/btnOk"
+            android:text="Đồng ý"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

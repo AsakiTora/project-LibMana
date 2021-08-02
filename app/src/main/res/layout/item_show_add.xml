@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/botron_layout"
+    android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        android:id="@+id/layoutItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E4E4E4"
+        android:paddingStart="16dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01/01/2000"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chi tiêu: "
+            android:textSize="16dp"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutItem"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgKhoan"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/tienxu"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/tvKhoan"
+            style="@style/tvThuChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toRightOf="@+id/imgKhoan"
+            android:layout_centerInParent="true"
+            android:text="Ăn uống" />
+
+        <TextView
+            android:id="@+id/tv_money_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tvThuChi"
+            android:layout_alignParentEnd="true"
+            android:text="0"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

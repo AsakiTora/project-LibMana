@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/action_list">
+    <activity
+        android:id="@+id/action_list"
+        android:name="fpoly.andoid.myapplication.ShowListActivity"
+        android:label="activity_show_list"
+        tools:layout="@layout/activity_show_list" />
+    <activity
+        android:id="@+id/action_data"
+        android:name="fpoly.andoid.myapplication.GraphActivity"
+        android:label="GraphActivity" />
+</navigation>
